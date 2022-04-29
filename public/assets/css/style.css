@@ -1,4 +1,4 @@
-div,ul,li,header,aside,section,h1,h2,h3,h4,h5,h6,main, body, html{
+div,ul,li,header,aside,section,h1,h2,h3,h4,h5,h6,main, body, form, html{
     padding: 0;
     margin: 0;
 }
@@ -9,6 +9,9 @@ body {
 }
 * {
     box-sizing: border-box;
+}
+input,button,textarea, select {
+    outline: none;
 }
 a {
     text-decoration: none;
@@ -71,4 +74,12 @@ ul.sidebar {
 }
 .sidebar a:hover .nav-item {
     color: #3192ff;
+}
+.page-title {
+    font-weight: normal;
+    font-size: 1.8em;
+}
+.input-g-text {
+    color: #b1b6c9;
+    background-color: #fff;
 }

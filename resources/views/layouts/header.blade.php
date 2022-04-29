@@ -124,22 +124,3 @@
                 </div>
             </div>
         </aside>
-        <div class="col-lg-9">
-            <div class="row">
-                <div class="col-lg-6">
-                    <span>Users</span>
-                    <form action="/" method="get">
-                        <select name="year" id="year">
-                            <option value="" disabled="" selected="">Year</option>
-                            <option value="2022">2022</option>
-                        </select>
-                        <input type="search" name="u" id="u" placeholder="Search..">
-                    </form>
-                </div>
-
-                <div class="col-lg-6">
-
-                </div>
-            </div>
-        </div>
-    </div>
