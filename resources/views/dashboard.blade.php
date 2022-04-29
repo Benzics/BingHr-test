@@ -119,6 +119,18 @@
                     </form>
                 </div>
             </div>
+
+            <!-- The table -->
+            <table class="table">
+                <thead class="header-g">
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Create Date</th>
+                        <th scope="col">Role</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+            </table>
         </div>
     </section>
 </div>

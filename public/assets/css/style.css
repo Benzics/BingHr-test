@@ -109,3 +109,7 @@ a.notification-icon {
     font-weight: normal;
     font-size: 1.4em;
 }
+.header-g {
+    background-color: #eef3fa;
+    color: gray;
+}
