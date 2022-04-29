@@ -30,18 +30,21 @@ ul.sidebar {
     list-style: none;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 .first-nav .nav-item {
     padding: 15px 15px;
 }
-.first-nav a {
+.first-nav a li{
     color: #f8fbfd;
-}
-a {
     transition: .3s;
 }
-.first-nav a:hover {
+
+.first-nav a:hover li {
     background-color: #f8fbfd;
     color:  #2a78ff;
     
+}
+.end-nav {
+    margin-top: auto;
 }

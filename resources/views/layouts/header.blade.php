@@ -26,7 +26,7 @@
             <div class="row no-gutters full-height">
                 <div class="col-lg-3 nav-area">
                     <ul class="first-nav">
-                        <a href="#">
+                        <a href="#" class="primary-nav">
                             <li class="nav-item"><i class="fa-solid fa-magnifying-glass"></i></li>
                         </a>
                         <a href="#">
@@ -41,6 +41,18 @@
                         <a href="#">
                             <li class="nav-item"> <i class="fa-solid fa-file"></i></li>
                         </a>
+
+                        <li class="end-nav">
+                            <ul>
+                                <a href="#" class="primary-nav">
+                                    <li class="nav-item"> <i class="fa-solid fa-gear"></i></li>
+                                </a>
+                                <a href="#">
+                                    <li class="nav-item"><i class="fa-solid fa-bars-staggered"></i></li>
+                                </a>
+                            </ul>
+                        </li>
+
 
 
 
