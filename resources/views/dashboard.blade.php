@@ -252,6 +252,12 @@
             </div>
         </div>
     </section>
+
+    <div class="container mt-4">
+        <div class="cc-text">
+            &copy; Copyright 2022 <span class="brand">BingHr.io</span>
+        </div>
+    </div>
 </div>
 
 {{-- Document footer view --}}

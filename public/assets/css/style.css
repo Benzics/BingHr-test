@@ -4,8 +4,7 @@ div,ul,li,header,aside,section,h1,h2,h3,h4,h5,h6,main, body, form, html{
 }
 body {
     background-color: #f8fbfd;
-    width: 100%;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 * {
     box-sizing: border-box;
@@ -170,3 +169,10 @@ a.action-btn {
     outline-color: red;
     outline-style: solid;
 } */
+
+.cc-text {
+    color: gray;
+}
+.brand {
+    color: #000;
+}
