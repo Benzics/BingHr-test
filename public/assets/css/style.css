@@ -162,3 +162,11 @@ a.action-btn {
     color: gray;;
     margin: 0 10px;
 }
+
+/* debug css */
+/* * {
+    background-color: #000 !important;
+    color: #000 !important;
+    outline-color: red;
+    outline-style: solid;
+} */
