@@ -159,6 +159,93 @@
 
                         </td>
                     </tr>
+
+                    <tr>
+                        <td>
+                            <div class="d-flex">
+                                <div class="mr-auto">
+                                    <div class="d-flex">
+                                        <img src="{{ asset('/assets/images/avatar.png')}}" alt="" class="avatar">
+                                        <div>
+                                            <div class="user-name">David Wagner</div>
+                                            <div class="user-email">david_wagner@example.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="tags a">
+                                        Admin
+                                    </span>
+                                </div>
+
+                            </div>
+                        </td>
+                        <td><span class="meta">24 Oct 2015</span></td>
+                        <td><span class="meta">CEO and Founder</span></td>
+                        <td>
+                            <a href="#" class="action-btn"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a href="#" class="action-btn"><i class="fa-solid fa-trash"></i></a>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="d-flex">
+                                <div class="mr-auto">
+                                    <div class="d-flex">
+                                        <img src="{{ asset('/assets/images/avatar.png')}}" alt="" class="avatar">
+                                        <div>
+                                            <div class="user-name">David Wagner</div>
+                                            <div class="user-email">david_wagner@example.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="tags hr">
+                                        HR Admin
+                                    </span>
+                                </div>
+
+                            </div>
+                        </td>
+                        <td><span class="meta">24 Oct 2015</span></td>
+                        <td><span class="meta">CEO and Founder</span></td>
+                        <td>
+                            <a href="#" class="action-btn"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a href="#" class="action-btn"><i class="fa-solid fa-trash"></i></a>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="d-flex">
+                                <div class="mr-auto">
+                                    <div class="d-flex">
+                                        <img src="{{ asset('/assets/images/avatar.png')}}" alt="" class="avatar">
+                                        <div>
+                                            <div class="user-name">David Wagner</div>
+                                            <div class="user-email">david_wagner@example.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="tags e">
+                                        Employee
+                                    </span>
+                                </div>
+
+                            </div>
+                        </td>
+                        <td><span class="meta">24 Oct 2015</span></td>
+                        <td><span class="meta">CEO and Founder</span></td>
+                        <td>
+                            <a href="#" class="action-btn"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a href="#" class="action-btn"><i class="fa-solid fa-trash"></i></a>
+
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>

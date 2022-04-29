@@ -128,9 +128,21 @@ img.avatar {
     display: inline-block;
     font-size: 14px;
     font-weight: bold;
+    text-align: center;
+    min-width: 107px;
 }
-.sa {
+.tags.sa {
     background-color: red;
+}
+.tags.a {
+    background-color: #2a78ff;
+}
+.tags.hr {
+    background-color: #00f195;
+}
+.tags.e {
+    background-color: #eef3fa;
+    color: #a3a9c1;
 }
 
 .user-name {
