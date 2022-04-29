@@ -5,12 +5,19 @@ div,ul,li,header,aside,section,h1,h2,h3,h4,h5,h6,main, body, html{
 body {
     background-color: #f8fbfd;
     width: 100%;
+    font-size: 1em;
 }
 * {
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
 .nav-area {
-    background-color: #2a78ff;
+    background-color: #3192ff;
     color: #f8fbfd;
 }
 @media (min-width: 992px) {
@@ -23,7 +30,6 @@ body {
 }
 ul.sidebar {
     list-style: none;
-    padding: 30px;
 }
 
 .first-nav {
@@ -33,7 +39,7 @@ ul.sidebar {
     height: 100%;
 }
 .first-nav .nav-item {
-    padding: 15px 15px;
+    padding: 15px 16px;
 }
 .first-nav a li{
     color: #f8fbfd;
@@ -42,9 +48,22 @@ ul.sidebar {
 
 .first-nav a:hover li {
     background-color: #f8fbfd;
-    color:  #2a78ff;
+    color:  #3192ff;
     
 }
 .end-nav {
     margin-top: auto;
+}
+
+.sidebar .nav-item {
+    color: gray;
+    padding: 5px 30px;
+}
+.sidebar .nav-item i {
+    display: inline-block;
+    margin-right: 10px;
+}
+.sidebar .nav-item.active {
+    color: #3192ff;
+    border-right: 3px solid #3192ff;
 }

@@ -22,9 +22,9 @@
 
 
     <div class="row">
-        <aside class="col-lg-2">
+        <aside class="col-lg-3">
             <div class="row no-gutters full-height">
-                <div class="col-lg-3 nav-area">
+                <div class="col-lg-2 nav-area">
                     <ul class="first-nav">
                         <a href="#" class="primary-nav">
                             <li class="nav-item"><i class="fa-solid fa-magnifying-glass"></i></li>
@@ -58,21 +58,25 @@
 
                     </ul>
                 </div>
-                <div class="col-lg-9 bg-white">
+                <div class="col-lg-10 bg-white">
                     <nav>
                         <ul class="nav flex-column sidebar">
-                            <li class="nav-item"><i class="fa-solid fa-table-columns"></i>Dashboard</li>
-                            <li class="nav-item">Test</li>
-                            <li class="nav-item">Test</li>
-                            <li class="nav-item">Test</li>
-                            <li class="nav-item">Test</li>
+                            <a href="#">
+                                <li class="nav-item"><i class="fa-solid fa-table-columns"></i>Dashboard</li>
+
+                            </a>
+                            <a href="#">
+                                <li class="nav-item active"><i class="fa-solid fa-table-columns"></i>Dashboard</li>
+
+                            </a>
+
 
                         </ul>
                     </nav>
                 </div>
             </div>
         </aside>
-        <div class="col-lg-10">
+        <div class="col-lg-9">
             <div class="row">
                 <div class="col-lg-6">
                     <span>Users</span>
