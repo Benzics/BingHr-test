@@ -179,3 +179,9 @@ a.action-btn {
 .form-control {
     font-size: 0.9em;
 }
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 80%;
+   
+}
+}

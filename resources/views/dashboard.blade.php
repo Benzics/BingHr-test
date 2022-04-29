@@ -95,7 +95,7 @@
 
     <div class="container">
         <div class="mt-5 d-flex justify-content-end">
-            <a href="#" class="btn btn-primary btn-green">Add User</a>
+            <a href="#" class="btn btn-primary btn-green" data-toggle="modal" data-target="#addModal">Add User</a>
         </div>
     </div>
 
@@ -256,6 +256,28 @@
     <div class="container mt-4">
         <div class="cc-text">
             &copy; Copyright 2022 <span class="brand">BingHr.io</span>
+        </div>
+    </div>
+</div>
+
+<!-- Add user Modal -->
+<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addModalLabel">Add User</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Add User</button>
+                <button type="button" class="btn " data-dismiss="modal">Cancel</button>
+
+            </div>
         </div>
     </div>
 </div>
