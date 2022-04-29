@@ -59,6 +59,7 @@ ul.sidebar {
     color: #b1b6c9;
     padding: 3px 30px;
     margin: 5px 0;
+    transition: .3s;
 }
 .sidebar .nav-item i {
     display: inline-block;
@@ -67,4 +68,7 @@ ul.sidebar {
 .sidebar .nav-item.active {
     color: #3192ff;
     border-right: 3px solid #3192ff;
+}
+.sidebar a:hover .nav-item {
+    color: #3192ff;
 }
