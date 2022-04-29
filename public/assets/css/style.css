@@ -1,0 +1,47 @@
+div,ul,li,header,aside,section,h1,h2,h3,h4,h5,h6,main, body, html{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #f8fbfd;
+    width: 100%;
+}
+* {
+    box-sizing: border-box;
+}
+.nav-area {
+    background-color: #2a78ff;
+    color: #f8fbfd;
+}
+@media (min-width: 992px) {
+    .nav-area, ul.sidebar {
+        padding-top: 100px !important;
+    }
+    .full-height {
+        height: 100vh;
+    }
+}
+ul.sidebar {
+    list-style: none;
+    padding: 30px;
+}
+
+.first-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.first-nav .nav-item {
+    padding: 15px 15px;
+}
+.first-nav a {
+    color: #f8fbfd;
+}
+a {
+    transition: .3s;
+}
+.first-nav a:hover {
+    background-color: #f8fbfd;
+    color:  #2a78ff;
+    
+}
