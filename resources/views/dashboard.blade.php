@@ -2,9 +2,9 @@
 @include('layouts.header')
 
 <div class="col-lg-9">
-    <div class="container my-5">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-5">
+            <div class="col-lg-5 mt-5">
                 <form action="/" method="get" class="row">
                     <div class="col-3">
                         <h1 class="page-title">Users</h1>
@@ -28,7 +28,67 @@
             </div>
 
             <div class="col-lg-7">
+                <div class="row no-gutters">
+                    <div class="col-lg-9 mt-5">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="dropdown show">
+                                    <a class="header-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Language
+                                    </a>
 
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">English</a>
+                                        <a class="dropdown-item" href="#">Spanish</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="dropdown show">
+                                    <a class="header-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Reports
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                        <a class="dropdown-item" href="#">Lorem</a>
+                                        <a class="dropdown-item" href="#">Ipsum</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="dropdown show">
+                                    <a class="header-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Project
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
+                                        <a class="dropdown-item" href="#">Lorem</a>
+                                        <a class="dropdown-item" href="#">Ipsum</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mt-5">
+                        <div class="row">
+                            <div class="col-4">
+                                <a class="notification-icon" href="#">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a class="notification-icon" href="#">
+                                    <i class="fa-solid fa-bell"></i>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a class="notification-icon" href="#">
+                                    <i class="fa-solid fa-user"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

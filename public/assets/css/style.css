@@ -83,3 +83,14 @@ ul.sidebar {
     color: #b1b6c9;
     background-color: #fff;
 }
+a.header-link {
+    display: inline-block;
+    color: #333;
+    font-size: 1.1em;
+}
+a.notification-icon {
+    color: #000;
+    text-align: center;
+    display: block;
+    
+}
