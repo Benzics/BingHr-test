@@ -102,3 +102,10 @@ a.notification-icon {
     background-color: #7eadaa;
     border-color: #7eadaa;
 }
+.table-area {
+    background-color: #fff;
+}
+.theader{
+    font-weight: normal;
+    font-size: 1.4em;
+}

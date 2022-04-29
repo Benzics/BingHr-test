@@ -98,6 +98,29 @@
             <a href="#" class="btn btn-primary btn-green">Add User</a>
         </div>
     </div>
+
+    <section class="container mt-5">
+        <div class="table-area">
+
+            <div class="d-flex">
+                <div class="mr-auto d-flex align-items-end">
+                    <h2 class="theader p-2 pl-4">List Users</h2>
+                </div>
+
+
+                <div class="p-2">
+                    <form action="/" method="get">
+                        <div class="input-group">
+                            <input type="search" name="u" id="u" placeholder="Search.." class="form-control border-right-0">
+                            <div class="input-group-append">
+                                <span class="input-group-text input-g-text" id="basic-addon2"> <i class="fa-solid fa-magnifying-glass"></i></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
 {{-- Document footer view --}}
