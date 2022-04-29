@@ -30,16 +30,16 @@
                             <li class="nav-item"><i class="fa-solid fa-magnifying-glass"></i></li>
                         </a>
                         <a href="#">
-                            <li class="nav-item"> <i class="fa-solid fa-table-columns"></i></li>
+                            <li class="nav-item"><i class="fa-regular fa-calendar"></i></li>
                         </a>
                         <a href="#">
-                            <li class="nav-item"> <i class="fa-solid fa-user"></i></li>
+                            <li class="nav-item"> <i class="fa-regular fa-user"></i></li>
                         </a>
                         <a href="#">
-                            <li class="nav-item"> <i class="fa-solid fa-comment"></i></li>
+                            <li class="nav-item"> <i class="fa-regular fa-comment"></i></li>
                         </a>
                         <a href="#">
-                            <li class="nav-item"> <i class="fa-solid fa-file"></i></li>
+                            <li class="nav-item"> <i class="fa-regular fa-file"></i></li>
                         </a>
 
                         <li class="end-nav">
@@ -66,9 +66,57 @@
 
                             </a>
                             <a href="#">
-                                <li class="nav-item active"><i class="fa-solid fa-table-columns"></i>Dashboard</li>
+                                <li class="nav-item active"><i class="fa-solid fa-user-group"></i>Users</li>
 
                             </a>
+                            <a href="#">
+                                <li class="nav-item"><i class="fa-solid fa-lock"></i>Departments</li>
+
+                            </a>
+                            <a href="#">
+                                <li class="nav-item">
+                                    <i class="fa-solid fa-users"></i>Employee
+                                </li>
+
+                            </a>
+                            <a href="#">
+                                <li class="nav-item">
+                                    <i class="fa-solid fa-bolt"></i>Activities
+                                </li>
+
+                            </a>
+                            <a href="#">
+                                <li class="nav-item">
+                                    <i class="fa-solid fa-circle-check"></i>Holidays
+                                </li>
+
+                            </a>
+                            <a href="#">
+                                <li class="nav-item">
+                                    <i class="fa-solid fa-fire-flame-simple"></i>Events
+                                </li>
+
+                            </a>
+                            <a href="#">
+                                <li class="nav-item">
+                                    <i class="fa-solid fa-money-bill"></i>Payroll
+                                </li>
+
+                            </a>
+                            <a href="#">
+                                <li class="nav-item">
+                                    <i class="fa-solid fa-user"></i>Accounts
+                                </li>
+
+                            </a>
+                            <a href="#">
+                                <li class="nav-item">
+                                    <i class="fa-solid fa-circle-exclamation"></i>Report
+                                </li>
+
+                            </a>
+
+
 
 
                         </ul>
