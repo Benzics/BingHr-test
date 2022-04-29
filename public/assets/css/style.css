@@ -76,7 +76,7 @@ ul.sidebar {
 }
 .page-title {
     font-weight: normal;
-    font-size: 1.8em;
+    font-size: 1.6em;
 }
 .input-g-text {
     color: #b1b6c9;
@@ -85,7 +85,7 @@ ul.sidebar {
 a.header-link {
     display: inline-block;
     color: #333;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 a.notification-icon {
     color: #000;
@@ -175,4 +175,7 @@ a.action-btn {
 }
 .brand {
     color: #000;
+}
+.form-control {
+    font-size: 0.9em;
 }
