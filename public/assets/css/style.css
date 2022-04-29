@@ -92,5 +92,13 @@ a.notification-icon {
     color: #000;
     text-align: center;
     display: block;
-    
+
+}
+.btn-green {
+    background-color: #007657;
+    border-color: #007657;
+}
+.btn-green:hover {
+    background-color: #7eadaa;
+    border-color: #7eadaa;
 }

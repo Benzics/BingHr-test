@@ -92,6 +92,12 @@
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="mt-5 d-flex justify-content-end">
+            <a href="#" class="btn btn-primary btn-green">Add User</a>
+        </div>
+    </div>
 </div>
 
 {{-- Document footer view --}}
