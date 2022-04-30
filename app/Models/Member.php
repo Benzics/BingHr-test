@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Member extends Model
 {
     use HasFactory;
+
+    public $incrementing = FALSE;
+
+    protected $fillable = ['id', 'first_name', 'last_name', 'username', 'password', 'role', 'phone', 'email'];
 }
