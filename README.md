@@ -2,9 +2,9 @@
 
 ## Features
 
-_User can create, read, update and delete users in the db_
-_Responsive_
-_Sidebar collapses_
+-   _User can create, read, update and delete users in the db_
+-   _Responsive_
+-   _Sidebar collapses_
 
 ## Installation
 
