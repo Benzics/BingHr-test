@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\MembersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +14,6 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
-Route::get('/', [DashboardController::class, 'home']);
+Route::get('/', [MembersController::class, 'index']);
+
+Route::resource('members', MembersController::class);

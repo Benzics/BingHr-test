@@ -94,6 +94,18 @@
     </div>
 
     <div class="container">
+        @if($errors->any())
+        <div class="alert alert-danger mt-5 mb-5">
+            <ul>
+                @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+        @endif
+    </div>
+
+    <div class="container">
         <div class="mt-5 d-flex justify-content-end">
             <a href="#" class="btn btn-primary btn-green" data-toggle="modal" data-target="#addModal">Add User</a>
         </div>
@@ -272,7 +284,8 @@
             </div>
             <div class="modal-body">
                 <div class="container">
-                    <form action="/" method="post" name="add_user" id="add_user">
+                    <form action="/members" method="post" name="add_user" id="add_user">
+                        @csrf
                         <div class="form-group">
                             <input type="number" name="id" class="form-control" placeholder="Employee ID*" />
                         </div>
@@ -302,7 +315,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <select name="role" id="role" class="form-control">
+                                    <select name="role" id="role" class="form-control" required="">
                                         <option value="" selected="" disabled="">Select Role Type</option>
                                         <option value="1">Admin</option>
                                         <option value="0">Employee</option>

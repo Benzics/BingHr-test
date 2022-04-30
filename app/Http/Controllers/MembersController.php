@@ -13,7 +13,7 @@ class MembersController extends Controller
      */
     public function index()
     {
-        //
+        return view('dashboard');
     }
 
     /**
@@ -34,7 +34,16 @@ class MembersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            'id' => 'required|numeric',
+            'first_name' => 'required',
+            'last_name' => 'required',
+            'email' => 'required|email',
+            'password' => 'required|confirmed',
+            'role' => 'required|numeric',
+            'username' => 'required'
+
+        ]);
     }
 
     /**
