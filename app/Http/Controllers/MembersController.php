@@ -35,7 +35,7 @@ class MembersController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'id' => 'required|numeric',
+            'id' => 'required|numeric|unique:members',
             'first_name' => 'required',
             'last_name' => 'required',
             'email' => 'required|email',
