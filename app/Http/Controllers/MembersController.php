@@ -144,7 +144,35 @@ class MembersController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $validated = $request->validate([
+
+            'first_name' => 'required',
+            'last_name' => 'required',
+            'email' => 'required|email',
+            'password' => 'required|confirmed',
+            'role' => 'required|numeric',
+            'username' => 'required'
+
+        ]);
+
+        $member = Member::find($id);
+
+        $member->first_name = $validated['first_name'];
+        $member->last_name = $validated['last_name'];
+        $member->email = $validated['email'];
+        $member->password = Hash::make($validated['password']);
+        $member->role = $validated['role'];
+        $member->user_name = $validated['username'];
+        $member->phone = $request->phone;
+
+
+        if ($member->save())
+        {
+
+            return redirect('/members')->with('success', 'User data edited successfully.');
+        }
+
+        return redirect('/members')->with('error', 'An error occured, please try again.');
     }
 
     /**

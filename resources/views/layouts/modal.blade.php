@@ -13,7 +13,7 @@
                         @csrf
                         @method('PUT')
                         <div class="form-group">
-                            <input type="number" name="id" class="form-control" placeholder="Employee ID*" value="{{ $row->id }}" required="" />
+                            <input type="number" name="id" class="form-control" placeholder="Employee ID*" value="{{ $row->id }}" readonly="" />
                         </div>
                         <div class="row">
                             <div class="col-md-6">
