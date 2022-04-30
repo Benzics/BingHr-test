@@ -2,22 +2,22 @@
 @include('layouts.header')
 
 <div class="w-100">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-5 mt-5">
+    <div class="container-fluid">
+        <div class="d-flex cflex">
+            <div class="mt-5 mr-auto">
               
     
                 <form action="/" method="get" class="row">
-                    <div class="col-3">
-                        <h1 class="page-title">Users</h1>
+                    <div class="col-md-3 col-12">
+                        <h1 class="page-title pt-2">Users</h1>
                     </div>
-                    <div class="col-3">
+                    <div class="col-md-3 col-5 pt-2">
                         <select name="year" id="year" class="form-control">
                             <option value="" disabled="" selected="">Year</option>
                             <option value="2022">2022</option>
                         </select>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6 col-7 pt-2">
                         <div class="input-group">
                             <input type="search" name="u" id="u" placeholder="Search.." class="form-control border-right-0">
                             <div class="input-group-append">
@@ -29,12 +29,12 @@
 
             </div>
 
-            <div class="col-lg-7">
+            <div class="pt-2" style="padding-left: 15px">
                 <div class="row no-gutters">
                     <div class="col-lg-9 mt-5">
                         <div class="row">
                             <div class="col-4">
-                                <div class="dropdown show">
+                                <div class="dropdown show" style="width:240px">
                                     <a class="header-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Language
                                     </a>
@@ -84,7 +84,7 @@
                                 </a>
                             </div>
                             <div class="col-4">
-                                <a class="notification-icon" href="#">
+                                <a class="notification-icon free" href="#">
                                     <i class="fa-solid fa-user"></i>
                                 </a>
                             </div>

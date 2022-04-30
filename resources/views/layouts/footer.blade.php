@@ -4,6 +4,7 @@
     $(document).ready(() => {
         $('#side_toggle').on('click', () => {
             $('.nav-aside').toggleClass('hide-left');
+            // $('.nav-aside').toggle('slide');
         });
     });
 </script>
