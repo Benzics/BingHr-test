@@ -8,7 +8,7 @@ _Sidebar collapses_
 
 ## Installation
 
--   Pull this repo `git pull <remote>`
+-   Pull this repo `git pull git@github.com:Benzics/BingHr-test.git`
 
 -   Create a **.env** file in your document root if it doesn't exist, and copy contents of **.env.example** to it. Edit your database info **_(DB_USERNAME, DB_PASSWORD, DB_DATABASE)_**
 
