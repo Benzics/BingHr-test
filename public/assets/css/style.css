@@ -173,12 +173,18 @@ img.avatar {
     font-size: 14px;
     color: #666;
 }
-a.action-btn {
+a.action-btn,
+button.action-btn {
     display: inline-block;
     color: gray;
     margin: 0 10px;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
 }
-
+button:focus {
+    outline: none;
+}
 /* debug css */
 /* * {
     background-color: #000 !important;

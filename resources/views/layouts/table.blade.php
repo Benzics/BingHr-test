@@ -62,7 +62,12 @@
                         <td><span class="meta"> {{ $row->role_name }}</span></td>
                         <td>
                             <a href="#" class="action-btn" data-toggle="modal" data-target="#editModal{{ $row->id }}"><i class="fa-solid fa-pen-to-square"></i></a>
-                            <a href="#" class="action-btn"><i class="fa-solid fa-trash"></i></a>
+                            <form action="/members/{{ $row->id }}" method="post" style="display: inline-block">
+                            @method('DELETE')
+                            @csrf
+                            <button class="action-btn" onclick="return confirm('Are you sure you want to delete?')"><i class="fa-solid fa-trash"></i></button>
+                            </form>
+           
 
                         </td>
                     </tr>

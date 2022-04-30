@@ -183,6 +183,14 @@ class MembersController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $member = Member::find($id);
+
+        if ($member->delete())
+        {
+
+            return redirect('/members')->with('success', 'User deleted successfully.');
+        }
+
+        return redirect('/members')->with('error', 'An error occured, please try again.');
     }
 }
