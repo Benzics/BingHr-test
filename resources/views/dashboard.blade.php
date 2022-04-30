@@ -287,17 +287,17 @@
                     <form action="/members" method="post" name="add_user" id="add_user">
                         @csrf
                         <div class="form-group">
-                            <input type="number" name="id" class="form-control" placeholder="Employee ID*" value="{{ old('id') }}" />
+                            <input type="number" name="id" class="form-control" placeholder="Employee ID*" value="{{ old('id') }}" required="" />
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="first_name" class="form-control" placeholder="First Name*" value="{{ old('first_name') }}" />
+                                    <input type="text" name="first_name" class="form-control" placeholder="First Name*" value="{{ old('first_name') }}" required="" />
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="last_name" class="form-control" placeholder="Last Name*" value="{{ old('last_name') }}" />
+                                    <input type="text" name="last_name" class="form-control" placeholder="Last Name*" value="{{ old('last_name') }}" required="" />
                                 </div>
                             </div>
 
@@ -305,7 +305,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <input type="email" name="email" class="form-control" placeholder="Email ID*" value="{{ old('email') }}">
+                                    <input type="email" name="email" class="form-control" placeholder="Email ID*" value="{{ old('email') }}" required="" />
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -329,19 +329,19 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <input type="text" name="username" class="form-control" placeholder="Username*" value="{{ old('username') }}" />
+                                    <input type="text" name="username" class="form-control" placeholder="Username*" value="{{ old('username') }}" required="" />
                                 </div>
                             </div>
 
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <input type="password" name="password" class="form-control" placeholder="Password*">
+                                    <input type="password" name="password" class="form-control" placeholder="Password*" required="" />
                                 </div>
                             </div>
 
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <input type="password" name="password_confirmation" class="form-control" placeholder="Confirm Password*">
+                                    <input type="password" name="password_confirmation" class="form-control" placeholder="Confirm Password*" required="" />
                                 </div>
                             </div>
                         </div>
