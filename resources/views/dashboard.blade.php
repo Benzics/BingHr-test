@@ -287,17 +287,17 @@
                     <form action="/members" method="post" name="add_user" id="add_user">
                         @csrf
                         <div class="form-group">
-                            <input type="number" name="id" class="form-control" placeholder="Employee ID*" />
+                            <input type="number" name="id" class="form-control" placeholder="Employee ID*" value="{{ old('id') }}" />
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="first_name" class="form-control" placeholder="First Name*">
+                                    <input type="text" name="first_name" class="form-control" placeholder="First Name*" value="{{ old('first_name') }}" />
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="last_name" class="form-control" placeholder="Last Name*">
+                                    <input type="text" name="last_name" class="form-control" placeholder="Last Name*" value="{{ old('last_name') }}" />
                                 </div>
                             </div>
 
@@ -305,22 +305,22 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <input type="email" name="email" class="form-control" placeholder="Email ID*">
+                                    <input type="email" name="email" class="form-control" placeholder="Email ID*" value="{{ old('email') }}">
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <input type="tel" name="phone" class="form-control" placeholder="Mobile No">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Mobile No" value="{{ old('phone') }}" />
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <select name="role" id="role" class="form-control" required="">
                                         <option value="" selected="" disabled="">Select Role Type</option>
-                                        <option value="1">Admin</option>
-                                        <option value="0">Employee</option>
-                                        <option value="2">HR Admin</option>
-                                        <option value="3">Super Admin</option>
+                                        <option value="1" @if(old('role')=='1' ) {{ 'selected' }} @endif>Admin</option>
+                                        <option value="0" @if(old('role')=='0' ) {{ 'selected' }} @endif>Employee</option>
+                                        <option value="2" @if(old('role')=='2' ) {{ 'selected' }} @endif>HR Admin</option>
+                                        <option value="3" @if(old('role')=='3' ) {{ 'selected' }} @endif>Super Admin</option>
                                     </select>
                                 </div>
                             </div>
@@ -329,7 +329,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <input type="text" name="username" class="form-control" placeholder="Username*">
+                                    <input type="text" name="username" class="form-control" placeholder="Username*" value="{{ old('username') }}" />
                                 </div>
                             </div>
 
