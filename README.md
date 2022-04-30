@@ -19,7 +19,10 @@ _Sidebar collapses_
 ```
 php artisan migrate
 php artisan db:seed --class=MemberSeeder
-php artisan serve
 ```
+
+-   Generate application key by running `php artisan key:generate`
+
+-   Run `php artisan serve` to serve application on your local server.
 
 -   Open application at [localhost:8000](http://localhost:8000)
