@@ -30,3 +30,12 @@ php artisan db:seed --class=MemberSeeder
 ## Note
 
 -   Collapse sidebar by clicking the bars icon at the end of the blue bar(sidebar area)
+
+### Deliverables
+
+-   Bootstrap
+-   JQuery
+-   PHP
+-   Laravel
+-   HTML
+-   CSS
