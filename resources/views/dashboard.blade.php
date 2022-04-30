@@ -230,6 +230,9 @@
         </div>
     </div>
 </div>
+@foreach ($users as $row)
+@include('layouts.modal')
+@endforeach
 
 {{-- Document footer view --}}
 @include('layouts.footer')

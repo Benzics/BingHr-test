@@ -61,11 +61,13 @@
                         <td><span class="meta">{{ $row->created_at }}</span></td>
                         <td><span class="meta"> {{ $row->role_name }}</span></td>
                         <td>
-                            <a href="#" class="action-btn"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <a href="#" class="action-btn" data-toggle="modal" data-target="#editModal{{ $row->id }}"><i class="fa-solid fa-pen-to-square"></i></a>
                             <a href="#" class="action-btn"><i class="fa-solid fa-trash"></i></a>
 
                         </td>
                     </tr>
+
+                   
 
                     @endforeach
 
