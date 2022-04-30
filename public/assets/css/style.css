@@ -1,4 +1,19 @@
-div,ul,li,header,aside,section,h1,h2,h3,h4,h5,h6,main, body, form, html{
+div,
+ul,
+li,
+header,
+aside,
+section,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+main,
+body,
+form,
+html {
     padding: 0;
     margin: 0;
 }
@@ -9,7 +24,10 @@ body {
 * {
     box-sizing: border-box;
 }
-input,button,textarea, select {
+input,
+button,
+textarea,
+select {
     outline: none;
 }
 a {
@@ -23,7 +41,8 @@ a:hover {
     color: #f8fbfd;
 }
 @media (min-width: 992px) {
-    .nav-area, ul.sidebar {
+    .nav-area,
+    ul.sidebar {
         padding-top: 100px !important;
     }
     .full-height {
@@ -43,15 +62,14 @@ ul.sidebar {
 .first-nav .nav-item {
     padding: 15px 16px;
 }
-.first-nav a li{
+.first-nav a li {
     color: #f8fbfd;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .first-nav a:hover li {
     background-color: #f8fbfd;
-    color:  #3192ff;
-    
+    color: #3192ff;
 }
 .end-nav {
     margin-top: auto;
@@ -61,7 +79,7 @@ ul.sidebar {
     color: #b1b6c9;
     padding: 3px 30px;
     margin: 5px 0;
-    transition: .3s;
+    transition: 0.3s;
 }
 .sidebar .nav-item i {
     display: inline-block;
@@ -91,7 +109,6 @@ a.notification-icon {
     color: #000;
     text-align: center;
     display: block;
-
 }
 .btn-green {
     background-color: #007657;
@@ -104,7 +121,7 @@ a.notification-icon {
 .table-area {
     background-color: #fff;
 }
-.theader{
+.theader {
     font-weight: normal;
     font-size: 1.4em;
 }
@@ -130,16 +147,16 @@ img.avatar {
     text-align: center;
     min-width: 107px;
 }
-.tags.sa {
+.tags.tag-3 {
     background-color: red;
 }
-.tags.a {
+.tags.tag-1 {
     background-color: #2a78ff;
 }
-.tags.hr {
+.tags.tag-2 {
     background-color: #00f195;
 }
-.tags.e {
+.tags.tag-0 {
     background-color: #eef3fa;
     color: #a3a9c1;
 }
@@ -158,7 +175,7 @@ img.avatar {
 }
 a.action-btn {
     display: inline-block;
-    color: gray;;
+    color: gray;
     margin: 0 10px;
 }
 
@@ -179,11 +196,10 @@ a.action-btn {
 .form-control {
     font-size: 0.9em;
 }
-@media (min-width: 576px){
-.modal-dialog {
-    max-width: 80%;
-   
-}
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 80%;
+    }
 }
 .perm {
     color: gray;

@@ -15,7 +15,54 @@ class MembersController extends Controller
      */
     public function index()
     {
-        return view('dashboard');
+        // retrieve all users in table
+        $users = Member::all();
+        $user_data = [];
+
+        foreach ($users as $row)
+        {
+            $user_data[] = (object) [
+                'user_name' => $row->user_name,
+                'password' => $row->password,
+                'first_name' => $row->first_name,
+                'last_name' => $row->last_name,
+                'email' => $row->email,
+                'id' => $row->id,
+                'role' => $row->role,
+                'phone' => $row->phone,
+                'created_at' => $row->created_at
+            ];
+        }
+
+        foreach ($user_data as &$row)
+        {
+
+            switch ($row->role)
+            {
+                case 0:
+                    $row->role_name = 'Employee';
+                    break;
+                case 1:
+                    $row->role_name = 'Admin';
+                    break;
+                case 2:
+                    $row->role_name = 'HR Admin';
+                    break;
+                case 3:
+                    $row->role_name = 'Super Admin';
+                    break;
+                default:
+                    $row->role_name = 'Employee';
+            }
+
+            $plain_date = date('d M, Y', strtotime($row->created_at));
+
+            $row->created_at = $plain_date;
+        }
+
+        $data['users'] = $user_data;
+
+        return view('dashboard', $data);
     }
 
     /**
@@ -60,7 +107,8 @@ class MembersController extends Controller
 
         ]);
 
-        if ($member) {
+        if ($member)
+        {
 
             return redirect('/members')->with('success', 'New user successfully added');
         }
