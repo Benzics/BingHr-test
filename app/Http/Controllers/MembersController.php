@@ -21,6 +21,27 @@ class MembersController extends Controller
 
         foreach ($users as $row)
         {
+            switch ($row->role)
+            {
+                case 0:
+                    $role_name = 'Employee';
+                    break;
+                case 1:
+                    $role_name = 'Admin';
+                    break;
+                case 2:
+                    $role_name = 'HR Admin';
+                    break;
+                case 3:
+                    $role_name = 'Super Admin';
+                    break;
+                default:
+                    $role_name = 'Employee';
+            }
+
+            $plain_date = date('d M, Y', strtotime($row->created_at));
+
+
             $user_data[] = (object) [
                 'user_name' => $row->user_name,
                 'password' => $row->password,
@@ -30,35 +51,11 @@ class MembersController extends Controller
                 'id' => $row->id,
                 'role' => $row->role,
                 'phone' => $row->phone,
-                'created_at' => $row->created_at
+                'created_at' => $plain_date,
+                'role_name' => $role_name
             ];
         }
 
-        foreach ($user_data as &$row)
-        {
-
-            switch ($row->role)
-            {
-                case 0:
-                    $row->role_name = 'Employee';
-                    break;
-                case 1:
-                    $row->role_name = 'Admin';
-                    break;
-                case 2:
-                    $row->role_name = 'HR Admin';
-                    break;
-                case 3:
-                    $row->role_name = 'Super Admin';
-                    break;
-                default:
-                    $row->role_name = 'Employee';
-            }
-
-            $plain_date = date('d M, Y', strtotime($row->created_at));
-
-            $row->created_at = $plain_date;
-        }
 
         $data['users'] = $user_data;
 
