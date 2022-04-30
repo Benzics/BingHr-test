@@ -1,10 +1,12 @@
 {{-- Document header view --}}
 @include('layouts.header')
 
-<div class="col-lg-9">
+<div class="w-100">
     <div class="container">
         <div class="row">
             <div class="col-lg-5 mt-5">
+              
+    
                 <form action="/" method="get" class="row">
                     <div class="col-3">
                         <h1 class="page-title">Users</h1>
