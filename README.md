@@ -12,6 +12,8 @@ _Sidebar collapses_
 
 -   Create a **.env** file in your document root if it doesn't exist, and copy contents of **.env.example** to it. Edit your database info **_(DB_USERNAME, DB_PASSWORD, DB_DATABASE)_**
 
+-   Run `composer update` to install package dependencies.
+
 -   Open a terminal in document root and run the following commands respectively
 
 ```
