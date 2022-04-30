@@ -94,10 +94,10 @@
     </div>
 
     <div class="container">
-        @if($errors->any())
+        @if( $errors->any() )
         <div class="alert alert-danger mt-5 mb-5">
             <ul>
-                @foreach ($errors->all() as $error)
+                @foreach ( $errors->all() as $error )
                 <li>{{ $error }}</li>
                 @endforeach
             </ul>
@@ -317,10 +317,10 @@
                                 <div class="form-group">
                                     <select name="role" id="role" class="form-control" required="">
                                         <option value="" selected="" disabled="">Select Role Type</option>
-                                        <option value="1" @if(old('role')=='1' ) {{ 'selected' }} @endif>Admin</option>
-                                        <option value="0" @if(old('role')=='0' ) {{ 'selected' }} @endif>Employee</option>
-                                        <option value="2" @if(old('role')=='2' ) {{ 'selected' }} @endif>HR Admin</option>
-                                        <option value="3" @if(old('role')=='3' ) {{ 'selected' }} @endif>Super Admin</option>
+                                        <option value="1" @if( old('role')=='1' ) {{ 'selected' }} @endif>Admin</option>
+                                        <option value="0" @if( old('role')=='0' ) {{ 'selected' }} @endif>Employee</option>
+                                        <option value="2" @if( old('role')=='2' ) {{ 'selected' }} @endif>HR Admin</option>
+                                        <option value="3" @if( old('role')=='3' ) {{ 'selected' }} @endif>Super Admin</option>
                                     </select>
                                 </div>
                             </div>
