@@ -11,5 +11,5 @@ class Member extends Model
 
     public $incrementing = FALSE;
 
-    protected $fillable = ['id', 'first_name', 'last_name', 'username', 'password', 'role', 'phone', 'email'];
+    protected $fillable = ['id', 'first_name', 'last_name', 'user_name', 'password', 'role', 'phone', 'email'];
 }

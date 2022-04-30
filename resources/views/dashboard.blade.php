@@ -93,17 +93,7 @@
         </div>
     </div>
 
-    <div class="container">
-        @if( $errors->any() )
-        <div class="alert alert-danger mt-5 mb-5">
-            <ul>
-                @foreach ( $errors->all() as $error )
-                <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-        @endif
-    </div>
+    @include('layouts.errors')
 
     <div class="container">
         <div class="mt-5 d-flex justify-content-end">

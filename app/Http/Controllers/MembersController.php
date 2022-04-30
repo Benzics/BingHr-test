@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Member;
+use Illuminate\Support\Facades\Hash;
 
 class MembersController extends Controller
 {
@@ -45,6 +46,26 @@ class MembersController extends Controller
             'username' => 'required'
 
         ]);
+
+        // add user to db
+        $member = Member::create([
+            'id' => $validated['id'],
+            'first_name' => $validated['first_name'],
+            'last_name' => $validated['last_name'],
+            'email' => $validated['email'],
+            'password' => Hash::make($validated['password']),
+            'role' => $validated['role'],
+            'phone' => $request->phone,
+            'user_name' => $validated['username']
+
+        ]);
+
+        if ($member) {
+
+            return redirect('/members')->with('success', 'New user successfully added');
+        }
+
+        return redirect('/members')->with('error', 'An error occured, please try again');
     }
 
     /**
