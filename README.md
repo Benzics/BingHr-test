@@ -26,3 +26,7 @@ php artisan db:seed --class=MemberSeeder
 -   Run `php artisan serve` to serve application on your local server.
 
 -   Open application at [localhost:8000](http://localhost:8000)
+
+## Note
+
+-   Collapse sidebar by clicking the bars icon at the end of the blue bar(sidebar area)
