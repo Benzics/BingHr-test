@@ -185,3 +185,9 @@ a.action-btn {
    
 }
 }
+.perm {
+    color: gray;
+}
+.perm i {
+    color: #000;
+}
